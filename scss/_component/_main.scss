@@ -5,16 +5,13 @@ Main Page Content
 
 -------------------------------- */
 
+
 .cd-main-content {
 
 	.content-wrapper {
+		@include outer-container;
+		max-width: 100%;
 		padding: $header-height-S 5% 3em;
-
-		h1 {
-			text-align: center;
-			padding: 3em 0;
-			font-size: 2rem;
-		}
 	}
 
 	&::before {
@@ -28,12 +25,6 @@ Main Page Content
 		.content-wrapper {
 			margin-left: $sidebar-width-M;
 			padding-top: $header-height-M;
-
-			h1 {
-				padding: 4em 0;
-				font-size: 3.2rem;
-				font-weight: 300;
-			}
 		}
 
 		&::before {
@@ -50,5 +41,37 @@ Main Page Content
 		&::before {
 			content: 'desktop';
 		}
+	}
+}
+
+.row-module {
+
+}
+
+.half-module {
+	background: $color-module;
+	@include span-columns(12);
+	@include margin(3rem null null);
+	
+	@include MQ(M) {
+		@include span-columns(6);
+	}
+
+	@include MQ(L) {
+		@include span-columns(6);
+	}
+}
+
+.full-module {
+	background: $color-module;
+	@include span-columns(12);
+	@include margin(3rem null null);
+	
+	@include MQ(M) {
+		@include span-columns(12);
+	}
+
+	@include MQ(L) {
+		@include span-columns(12);
 	}
 }

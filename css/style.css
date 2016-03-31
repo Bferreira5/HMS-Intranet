@@ -195,11 +195,15 @@ Main Page Content
 
 -------------------------------- */
 .cd-main-content .content-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   padding: 45px 5% 3em; }
-  .cd-main-content .content-wrapper h1 {
-    text-align: center;
-    padding: 3em 0;
-    font-size: 2rem; }
+  .cd-main-content .content-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
 .cd-main-content::before {
   /* never visible - used to check MQ in jQuery */
   display: none;
@@ -208,10 +212,6 @@ Main Page Content
   .cd-main-content .content-wrapper {
     margin-left: 110px;
     padding-top: 55px; }
-    .cd-main-content .content-wrapper h1 {
-      padding: 4em 0;
-      font-size: 3.2rem;
-      font-weight: 300; }
   .cd-main-content::before {
     content: 'tablet'; } }
 @media only screen and (min-width: 1170px) {
@@ -219,6 +219,99 @@ Main Page Content
     margin-left: 200px; }
   .cd-main-content::before {
     content: 'desktop'; } }
+
+.half-module {
+  background: rgba(0, 0, 0, 0.1);
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  margin-top: 3rem; }
+  .half-module:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .half-module {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      .half-module:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 1170px) {
+    .half-module {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      .half-module:last-child {
+        margin-right: 0; } }
+
+.full-module {
+  background: rgba(0, 0, 0, 0.1);
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  margin-top: 3rem; }
+  .full-module:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .full-module {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 100%; }
+      .full-module:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 1170px) {
+    .full-module {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 100%; }
+      .full-module:last-child {
+        margin-right: 0; } }
+
+.cal-module {
+  padding: 1rem; }
+  .cal-module h1 {
+    font-size: 2.5em;
+    line-height: 0.96;
+    padding: 0; }
+  .cal-module ul.cal-list {
+    max-width: 100%; }
+    .cal-module ul.cal-list .cal-item {
+      background: white;
+      padding: .4rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem; }
+      .cal-module ul.cal-list .cal-item span.cal-time {
+        width: 100%;
+        font-size: 1.3em;
+        float: left;
+        font-weight: bold;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        padding: .2rem 0;
+        margin: 0; }
+      .cal-module ul.cal-list .cal-item span.cal-event-title {
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 0;
+        padding: .5rem 0 .5rem; }
+      .cal-module ul.cal-list .cal-item ul.cal-detail {
+        width: 100%;
+        font-size: 0.8em;
+        padding: 0 1rem 1rem;
+        margin: 0 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
+        .cal-module ul.cal-list .cal-item ul.cal-detail li {
+          padding: 0 .4rem; }
+          .cal-module ul.cal-list .cal-item ul.cal-detail li span.cal-detail-label {
+            font-weight: bold;
+            border-right: 2px solid rgba(0, 0, 0, 0.3);
+            margin: 0 .5rem 0 0;
+            padding: 0 .5rem 0 0; }
 
 /* -------------------------------- 
 
