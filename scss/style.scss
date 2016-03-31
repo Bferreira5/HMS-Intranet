@@ -1,0 +1,48 @@
+@import "bourbon", "neat";
+@import "_base/base";
+
+@import "_component/_component";
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font: {
+		size: 1.6rem;
+		family: $primary-font; // variables inside partials > _variables.scss
+	}
+	color: $color-1;
+	background-color: $color-3;
+	@include clearfix;
+	margin: 0;
+	padding: 0;
+	
+}
+
+a {
+	color: $color-2;
+	text-decoration: none;
+}
+
+input {
+	font-family: $primary-font;
+	font-size: 1.6rem;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
