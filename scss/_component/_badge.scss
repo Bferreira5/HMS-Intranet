@@ -1,0 +1,112 @@
+$badge-font-size: 0.75em !default;
+
+@mixin badge() {
+ 
+  border-radius: $badge-font-size * 5;
+  border: 2px solid transparentize($action-color, 0.8);
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.badge {
+	@include badge;
+}
+
+.badges-list {
+	overflow: auto; 
+	margin: 0;
+	padding: 1rem 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: block;
+		padding: 0;
+		margin: 0;
+
+		@include MQ(M) {
+			display: inline;
+			float: left;
+			padding: 0 1rem 1rem 0;
+		}
+
+		@include MQ(L) {
+			display: inline;
+			float: left;
+			padding: 0 1rem 1rem 0;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-left: 0;
+		}
+	}
+}
+	
+
+
+.contact-list {
+	$base-spacing: 1em !default;
+	$dark-gray: #333 !default;
+	$base-font-color: $dark-gray !default;
+	$action-color: #477dca !default;
+	$stats-color: lighten($action-color, 10%);
+	overflow: auto; 
+	margin: 0;
+	padding: 1rem 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		border-right: none;
+		color: $stats-color;
+		display: block;
+		font-size: 1em;
+		line-height: 1.3em;
+		padding: 0;
+		margin: 0;
+
+		@include MQ(M) {
+			border-right: 1px solid transparentize($base-font-color, 0.8);
+			display: inline;
+			float: left;
+			font-size: .9em;
+			line-height: 1.2em;
+			padding: 0 0.7em;
+		}
+
+		@include MQ(L) {
+			display: inline;
+			float: left;
+			font-size: 1.1em;
+			line-height: 1.2em;
+			padding: 0 0.7em;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	span {
+		color: $base-font-color;
+		display: block;
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+}

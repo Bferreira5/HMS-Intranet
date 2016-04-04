@@ -1,9 +1,9 @@
-@import "variables";
-@import "layout";
-@import "mixins";
+@import "_layout/_layout";
+
 @import "main";
 @import "calendar";
 @import "article";
 @import "account";
+@import "badge";
 @import "nav";
 
