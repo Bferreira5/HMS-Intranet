@@ -57,18 +57,44 @@
 
 		}
 	}
-	.acc-resume {
+	.acc-wiki {
 		display: inline-block;
+		overflow: auto;
+		aside {
+			@include span-columns(12 of 12);
+
+			@include MQ(M) {
+				@include span-columns(3 of 12);
+
+			}
+		}
+		article {
+			@include span-columns(12 of 12);
+
+			@include MQ(M) {
+				@include span-columns(9 of 12);
+			}
+
+			h4 {
+				margin: 0 0 0.5em 0;
+			}
+
+			p {
+				color: $base-font-color;
+				line-height: $base-line-height;
+			}
+
+			section p:last-of-type {
+				margin-bottom: 2em; 
+			}
+		}
 
 		a {
 			color: $action-color;
 			text-decoration: none;
 		}
 
-		aside {
-			@include span-columns(4);
-
-		}
+		
 
 		.scroll-on-page-link {
 			border-bottom: 1px solid transparentize($action-color, 0.8);
@@ -81,24 +107,10 @@
 				margin-bottom: $base-spacing;
 			}
 		}
+	}
+	.acc-resource {
+		@include fill-parent();
+		overflow: auto;
 
-		article {
-			h4 {
-			margin: 0 0 0.5em 0;
-			}
-
-			p {
-			color: $base-font-color;
-			line-height: $base-line-height;
-			}
-
-			section p:last-of-type {
-			margin-bottom: 2em; 
-			}
-
-			@include media($large-screen) {
-				@include span-columns(8);
-			}
-		}
 	}
 }
