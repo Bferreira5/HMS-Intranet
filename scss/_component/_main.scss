@@ -46,7 +46,7 @@ Main Page Content
 
 
 .half-module {
-	background: $color-module;
+	
 	@include span-columns(12);
 	@include margin(3rem null null);
 	
@@ -60,7 +60,7 @@ Main Page Content
 }
 
 .full-module {
-	background: $color-module;
+	
 	@include span-columns(12);
 	@include margin(3rem null null);
 	

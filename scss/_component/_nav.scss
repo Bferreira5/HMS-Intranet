@@ -1,12 +1,10 @@
 /* -------------------------------- 
-
 Header
-
 -------------------------------- */
 
 .cd-main-header {
 	position: absolute;
-	z-index: 2;
+	z-index: 14;
 	top: 0;
 	left: 0;
 
@@ -267,7 +265,7 @@ Sidebar
 
 .cd-side-nav {
 	position: absolute;
-	z-index: 1;
+	z-index: 11;
 	left: 0;
 	top: 0;
 	width: 100%;
