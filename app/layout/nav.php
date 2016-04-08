@@ -1,43 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Harvard Medical Intranet | Search Results</title>
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<header class="cd-main-header">
-		<a href="/" class="cd-logo"><img width="140px" src="../img/cd-logo.svg" alt="Logo"></a>
-		
-		<div class="cd-search is-hidden">
-			<form action="/app/search.html">
-				<input type="search" placeholder="Search...">
-			</form>
-		</div> <!-- cd-search -->
-
-		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
-
-		<nav class="cd-nav">
-			<ul class="cd-top-nav">
-				<li><a href="#0">Tour</a></li>
-				<li><a href="#0">Support</a></li>
-				<li class="has-children account">
-					<a href="#0">
-						<img src="../img/cd-avatar.png" alt="avatar">
-						Account
-					</a>
-
-					<ul>
-						<li><a href="/app/account.html">My Account</a></li>
-						<li><a href="/app/account.html">Edit Account</a></li>
-						<li><a href="/">Logout</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header> <!-- .cd-main-header -->
-
-	<main class="cd-main-content">
 		<nav class="cd-side-nav">
 			<ul>
 				<li class="cd-label">Main</li>
@@ -108,13 +68,3 @@
 				<li class="action-btn"><a href="#0">+ Button</a></li>
 			</ul>
 		</nav>
-
-		<div class="content-wrapper">
-			<h1>Search Results</h1>
-		</div> <!-- .content-wrapper -->
-	</main> <!-- .cd-main-content -->
-<script src="../js/jquery-2.1.4.js"></script>
-<script src="../js/jquery.menu-aim.js"></script>
-<script src="../js/main.js"></script> <!-- Resource jQuery -->
-</body>
-</html>
